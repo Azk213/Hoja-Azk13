@@ -51,3 +51,5 @@ def display_results():
     print("Total Marks:", Total_mark)
     print("Average Marks:", Average_Mark)
 display_results()
+
+
