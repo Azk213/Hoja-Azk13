@@ -15,28 +15,29 @@ def check_guess():
     global status
     if guess == answer:
         print("You Win")
-        main()
+        return True
     elif guess > answer:
         print("Too High")
     elif guess < answer:
         print("Too Low")
     else :
         print("Invalid guess")
+    return False
 
 def play_game():
     global attempts
     attempts = 6
     generate_number()
     while attempts > 0:
-        if attempts == 0:
-            print("Ran out of attempts")
-            print("Answer was ",answer)
-            main()
-        else:
-            print("Attempt:",attempts,"Out of 6")
+        print("Attempt:",attempts,"Out of 6")
         get_guess()
-        check_guess()
+        if check_guess():
+            main()
+            return
         attempts -= 1
+    print("Ran out of attempts")
+    print("Answer was ",answer)
+    main()
         
         
 def main():
