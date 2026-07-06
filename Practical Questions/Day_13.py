@@ -69,6 +69,13 @@ def factorial(n):
 factorial(n)
 print("_____________________________________________________________________________________________")
 #Question 10
+text =" "
+def reverse_string(text):
+    text = input("Enter word to be reversed")
+    print(text[::-1])
+reverse_string(text)
+
+
 
 
 
