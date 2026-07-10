@@ -1,4 +1,4 @@
-print("This is a Tkinter Demo for the original calculator ")
+
 import tkinter as tk
 from tkinter import messagebox
 
@@ -46,9 +46,9 @@ def withdraw():
     if amount <= 0:
         messagebox.showerror("Error", "Invalid amount.")
         return
-
+ 
     if amount > balance:
-        messagebox.showerror("Error", "Insufficient Balance.")
+        messagebox.showerror("Error" , "Insufficient Balance.")
         return
 
     balance -= amount
