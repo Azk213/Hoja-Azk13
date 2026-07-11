@@ -1,0 +1,2 @@
+def farewell():
+    print("Bye")

@@ -1,5 +1,50 @@
-import Package.math_tools
+from package import math_tools, string_tools, farewell, greet, converter
+import random ,os
+import datetime as dt
+from math import sqrt,pow
+
+
 print("_____________________________________________________________________________________________")
 # Question 1
 radius = 12
-Print("Radius is ",radius,"so area of the circle is ",math_tools.areaofcircle_r(radius))
+print("Radius is", radius, "so area of the circle is", math_tools.areaofcircle_r(radius))
+
+print("_____________________________________________________________________________________________")
+# Question 2
+text = input("Enter a text: ")
+print(string_tools.up(text))
+print("_____________________________________________________________________________________________")
+# Question 3
+print(random.randint(1,10))
+print("_____________________________________________________________________________________________")
+# Question 4
+num = int(input("Enter a Number : "))
+print(num,"'s square root is ",sqrt(num))
+exp = int(input("Enter a exponent"))
+print(num," raised to ",exp," is ",pow(num,exp))
+print("_____________________________________________________________________________________________")
+# Question 5
+farewell.farewell()
+greet.greet()
+print("_____________________________________________________________________________________________")
+# Question 6
+print(dt.datetime.now())
+print("_____________________________________________________________________________________________")
+# Question 7
+print(num)
+print(exp)
+print(num,"+",exp,"=",math_tools.add(num,exp))
+print(num,"-",exp,"=",math_tools.sub(num,exp))
+print("_____________________________________________________________________________________________")
+# Question 8
+print(num)
+print(math_tools.odd_or_even(num))
+print("_____________________________________________________________________________________________")
+# Question 9
+print(os.getcwd())
+print("_____________________________________________________________________________________________")
+# Question 10
+print(num,"KM")
+print(exp,"Miles")
+print(num,"KM is ",converter.km_to_miles(num),"Miles")
+print(exp,"Miles is",converter.miles_to_km(exp),"KM")
