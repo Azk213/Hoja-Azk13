@@ -60,7 +60,7 @@ class Example:
         print("This is a secret")
     
     def show():
-        __secret()
+        pass
 print("________________________________________________________________________________")
 #Question 7
 class Pass:
@@ -107,4 +107,18 @@ class ATM:
     def deposit(self,deposit):
         self.__balance += deposit
     
-    def withdraw(self,withdraw)
+    def withdraw(self,withdraw):
+        if self.__balance  > withdraw :
+            self.balance -= withdraw 
+        else :
+            print("Insufficient funds")
+    
+    def check_balance(self):
+        return self.__balance
+    
+atm = ATM(1000)
+print(atm.check_balance())
+atm.deposit(int(input("Enter amount to be deposited : ")))
+print(atm.check_balance())
+atm.withdraw(int(input("Enter amount to be withdrawed : ")))
+print(atm.check_balance())
