@@ -11,7 +11,7 @@ name_2 =input("What is your name?")
 print(name_2)
 print("________________________________________________________________________________")
 #Question 4
-print(name.count)
+print(name.count())
 print("________________________________________________________________________________")
 #Question 5
 print(name[0])
@@ -26,7 +26,7 @@ print(name.upper())
 print("________________________________________________________________________________")
 #Questiom 8
 python="PYTHON"
-print(python.lower)
+print(python.lower())
 print("________________________________________________________________________________")
 #Question 9
 text_2=input("Input text")
