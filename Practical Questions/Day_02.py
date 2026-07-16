@@ -22,16 +22,29 @@ example_set = (example_list)
 print(example_set)
 print("________________________________________________________________________________")
 #Question 5
-iPhone_17_pro_max = { "name":"17 Pro Max 2TB"
-                      "price": ₹2,27,900}
+iPhone_17_pro_max = { "name":"17 Pro Max 2TB",
+                      "price": "₹2,27,900",
+                       "brand":"iPhone"}
+print(iPhone_17_pro_max)
+print("________________________________________________________________________________")
+#Question 6
 string_to_integer =123
 string_to_integer =str(string_to_integer)
-
+print(string_to_integer)
+print("________________________________________________________________________________")
+#Question 7
 print(type("hello"))
 print(type(True))
 print(type(45.7))
-
+print("________________________________________________________________________________")
+#Question 8
 example_list2 =["1,2,3"]
 example_list2.append ("4")
 example_list3 =("1,2,3")
 example_list3.append ("4")
+print("________________________________________________________________________________")
+#Question 9
+above_18 = "false"
+print("________________________________________________________________________________")
+#Question 10
+print("Snake case")
