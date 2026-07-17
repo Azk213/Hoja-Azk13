@@ -40,3 +40,4 @@ print("Try expect help to deal with API keys expiring or not functioning properl
 print("________________________________________________________________________________")
 #Question 10
 print("What happens when an API returns a 404 response? How will your code handle it?")
+print("A 404 is an error caused by a API key issue it can be dealt with with the usage of try-expect.")
