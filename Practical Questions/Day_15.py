@@ -62,6 +62,7 @@ print("_________________________________________________________________________
 num = [1,2,3,4,5]
 print(num)
 num_mulitplied =  reduce(lambda a,b : a*b  ,num)
+print(num_mulitplied)
 print("________________________________________________________________________________")
 #Question 10
 def decorator(func):
